@@ -1,8 +1,7 @@
 import { ease } from "@/lib/motion";
 import { motion } from "framer-motion";
 
-const ease = [0.16, 1, 0.3, 1] as const;
-const transition = { ease: ease as unknown as [number, number, number, number] };
+const transition = { ease };
 
 const Hero = () => {
   return (
