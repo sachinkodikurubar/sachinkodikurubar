@@ -1,3 +1,4 @@
+import { ease } from "@/lib/motion";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
@@ -50,7 +51,7 @@ const Skills = () => {
           variants={reveal}
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
-          transition={{ ease: [0.16, 1, 0.3, 1], duration: 0.7 }}
+          transition={{ ease: ease, duration: 0.7 }}
         >
           <span className="text-sm font-medium text-primary font-body tracking-wider uppercase">Expertise</span>
           <h2 className="font-display text-3xl md:text-5xl font-bold mt-3 leading-tight">
@@ -65,7 +66,7 @@ const Skills = () => {
               variants={reveal}
               initial="hidden"
               animate={inView ? "visible" : "hidden"}
-              transition={{ ease: [0.16, 1, 0.3, 1], duration: 0.6, delay: 0.15 + ci * 0.12 }}
+              transition={{ ease: ease, duration: 0.6, delay: 0.15 + ci * 0.12 }}
               className="p-6 rounded-2xl border-glow surface-elevated"
             >
               <h3 className="font-display text-sm font-semibold text-primary mb-6 tracking-wide uppercase">
@@ -85,7 +86,7 @@ const Skills = () => {
                         initial={{ width: 0 }}
                         animate={inView ? { width: `${skill.level}%` } : { width: 0 }}
                         transition={{
-                          ease: [0.16, 1, 0.3, 1],
+                          ease: ease,
                           duration: 1,
                           delay: 0.4 + ci * 0.12 + si * 0.06,
                         }}

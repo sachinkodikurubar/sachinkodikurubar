@@ -1,3 +1,4 @@
+import { ease } from "@/lib/motion";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { ExternalLink, Github } from "lucide-react";
@@ -41,7 +42,7 @@ const Projects = () => {
           variants={reveal}
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
-          transition={{ ease: [0.16, 1, 0.3, 1], duration: 0.7 }}
+          transition={{ ease: ease, duration: 0.7 }}
         >
           <span className="text-sm font-medium text-primary font-body tracking-wider uppercase">Work</span>
           <h2 className="font-display text-3xl md:text-5xl font-bold mt-3 leading-tight">
@@ -56,7 +57,7 @@ const Projects = () => {
               variants={reveal}
               initial="hidden"
               animate={inView ? "visible" : "hidden"}
-              transition={{ ease: [0.16, 1, 0.3, 1], duration: 0.6, delay: 0.15 + i * 0.1 }}
+              transition={{ ease: ease, duration: 0.6, delay: 0.15 + i * 0.1 }}
               className="group p-6 md:p-8 rounded-2xl border-glow surface-elevated relative overflow-hidden cursor-pointer"
             >
               {/* Hover glow */}

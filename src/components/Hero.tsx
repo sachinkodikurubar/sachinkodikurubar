@@ -1,3 +1,4 @@
+import { ease } from "@/lib/motion";
 import { motion } from "framer-motion";
 
 const ease = [0.16, 1, 0.3, 1] as const;

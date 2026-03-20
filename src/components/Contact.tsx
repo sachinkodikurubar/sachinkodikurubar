@@ -1,3 +1,4 @@
+import { ease } from "@/lib/motion";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Mail, MapPin, ArrowUpRight } from "lucide-react";
@@ -24,7 +25,7 @@ const Contact = () => {
           variants={reveal}
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
-          transition={{ ease: [0.16, 1, 0.3, 1], duration: 0.7 }}
+          transition={{ ease: ease, duration: 0.7 }}
         >
           <span className="text-sm font-medium text-primary font-body tracking-wider uppercase">Contact</span>
           <h2 className="font-display text-3xl md:text-5xl font-bold mt-3 leading-tight">
@@ -39,7 +40,7 @@ const Contact = () => {
             variants={reveal}
             initial="hidden"
             animate={inView ? "visible" : "hidden"}
-            transition={{ ease: [0.16, 1, 0.3, 1], duration: 0.6, delay: 0.15 }}
+            transition={{ ease: ease, duration: 0.6, delay: 0.15 }}
             className="space-y-6"
           >
             <p className="text-muted-foreground text-lg leading-relaxed font-body">
@@ -76,7 +77,7 @@ const Contact = () => {
             variants={reveal}
             initial="hidden"
             animate={inView ? "visible" : "hidden"}
-            transition={{ ease: [0.16, 1, 0.3, 1], duration: 0.6, delay: 0.25 }}
+            transition={{ ease: ease, duration: 0.6, delay: 0.25 }}
             className="space-y-4"
             onSubmit={(e) => e.preventDefault()}
           >

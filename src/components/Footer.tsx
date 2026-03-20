@@ -1,3 +1,4 @@
+import { ease } from "@/lib/motion";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
@@ -10,7 +11,7 @@ const Footer = () => {
       <motion.div
         initial={{ opacity: 0 }}
         animate={inView ? { opacity: 1 } : { opacity: 0 }}
-        transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+        transition={{ duration: 0.6, ease: ease }}
         className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4"
       >
         <p className="text-sm text-muted-foreground font-body">

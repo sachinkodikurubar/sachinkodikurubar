@@ -1,3 +1,4 @@
+import { ease } from "@/lib/motion";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
@@ -23,7 +24,7 @@ const About = () => {
           variants={reveal}
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
-          transition={{ ease: [0.16, 1, 0.3, 1], duration: 0.7 }}
+          transition={{ ease: ease, duration: 0.7 }}
         >
           <span className="text-sm font-medium text-primary font-body tracking-wider uppercase">About</span>
           <h2 className="font-display text-3xl md:text-5xl font-bold mt-3 leading-tight">
@@ -37,7 +38,7 @@ const About = () => {
           variants={reveal}
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
-          transition={{ ease: [0.16, 1, 0.3, 1], duration: 0.7, delay: 0.15 }}
+          transition={{ ease: ease, duration: 0.7, delay: 0.15 }}
           className="mt-8 text-muted-foreground text-lg leading-relaxed max-w-2xl font-body"
         >
           I'm Sachin K, an AI and Data Science enthusiast passionate about creating
@@ -53,7 +54,7 @@ const About = () => {
               variants={reveal}
               initial="hidden"
               animate={inView ? "visible" : "hidden"}
-              transition={{ ease: [0.16, 1, 0.3, 1], duration: 0.6, delay: 0.3 + i * 0.1 }}
+              transition={{ ease: ease, duration: 0.6, delay: 0.3 + i * 0.1 }}
               className="p-6 rounded-xl border-glow surface-elevated"
             >
               <div className="font-display text-3xl md:text-4xl font-bold text-gradient-accent tabular-nums">

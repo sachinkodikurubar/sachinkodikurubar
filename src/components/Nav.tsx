@@ -1,7 +1,7 @@
+import { ease } from "@/lib/motion";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
-const ease = [0.16, 1, 0.3, 1] as [number, number, number, number];
 const transition = { ease, duration: 0.8 };
 
 const Nav = () => {
