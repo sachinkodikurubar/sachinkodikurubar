@@ -1,10 +1,8 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
-const transition = {
-  ease: [0.16, 1, 0.3, 1],
-  duration: 0.8,
-};
+const ease = [0.16, 1, 0.3, 1] as [number, number, number, number];
+const transition = { ease, duration: 0.8 };
 
 const Nav = () => {
   const { scrollYProgress } = useScroll();
