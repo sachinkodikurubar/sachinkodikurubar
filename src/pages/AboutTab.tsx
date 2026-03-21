@@ -194,9 +194,9 @@ const AboutTab = () => {
         className="glass-card neon-border p-6 mb-10"
       >
         <div className="flex items-center gap-2 mb-4">
-          <div className="w-3 h-3 rounded-full bg-red-500/80" />
-          <div className="w-3 h-3 rounded-full bg-yellow-500/80" />
-          <div className="w-3 h-3 rounded-full bg-green-500/80" />
+          <div className="w-3 h-3 rounded-full bg-destructive/80" />
+          <div className="w-3 h-3 rounded-full bg-primary/80" />
+          <div className="w-3 h-3 rounded-full bg-accent/60" />
           <span className="ml-2 text-xs text-muted-foreground font-mono-terminal">sachin@portfolio:~</span>
         </div>
 
