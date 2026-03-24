@@ -68,7 +68,7 @@ const Sidebar = () => {
           <InfoItem
             icon={<Phone className="w-4 h-4 text-primary" />}
             label="PHONE"
-            value="6363418533"
+            value="1234567890"
           />
           <InfoItem
             icon={<Github className="w-4 h-4 text-primary" />}

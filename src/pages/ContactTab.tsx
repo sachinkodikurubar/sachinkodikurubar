@@ -60,7 +60,7 @@ const ContactTab = () => {
           <div className="space-y-3">
             {[
               { icon: <Mail className="w-4 h-4 text-primary" />, label: "Email", value: "sachinsiddappakodikurubar@gmail.com", href: "mailto:sachinsiddappakodikurubar@gmail.com" },
-              { icon: <Phone className="w-4 h-4 text-primary" />, label: "Phone", value: "6363418533", href: "tel:6363418533" },
+              { icon: <Phone className="w-4 h-4 text-primary" />, label: "Phone", value: "1234567890", href: "tel:1234567890" },
               { icon: <MapPin className="w-4 h-4 text-primary" />, label: "Location", value: "Hanagal, Karnataka, India" },
             ].map((item, i) => (
               <motion.div
